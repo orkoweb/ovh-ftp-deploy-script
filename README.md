@@ -8,9 +8,9 @@ Ce script permet de déployer un projet via FTP sur un serveur OVH mutualisé en
 
 ## Prérequis
 
-`lftp` doit être installé sur votre système pour que le script fonctionne correctement. Voici comment l'installer selon votre système d'exploitation :
+`lftp` doit être installé sur votre système pour que le script fonctionne correctement. Voici comment l'installer (macOS) :
 
-### macOS (via Homebrew) :
+### Via Homebrew :
 ```sh
 brew install lftp
 ```
