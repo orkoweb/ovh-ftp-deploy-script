@@ -66,4 +66,12 @@ Le script ignore certains fichiers/dossiers par défaut :
 - Ne partagez jamais vos identifiants FTP
 - Vérifiez que `.netrc` est bien dans votre `.gitignore`
 
+## Note
+
+*Ce script était initialement un outil personnel que je n'avais pas prévu de partager publiquement. Il reste simple et sans fioritures, mais il fonctionne efficacement pour mes besoins. Néanmoins, s'il peut aider des personnes à déployer leurs projets via FTP sur des hébergements mutualisés, j'ai pensé qu'il pourrait être une bonne idée de le mettre à disposition. N'hésitez pas à l'adapter à vos propres besoins.*
+
+## Licence
+
+Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
+
 ---
