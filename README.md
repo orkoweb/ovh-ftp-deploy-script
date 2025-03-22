@@ -3,21 +3,21 @@
 ---
 
 Ce script permet de déployer un projet via FTP sur un serveur OVH mutualisé en utilisant `lftp`.
+Les instructions décrites ci-dessous concernent l'utilisation de ce sricpt sur macOS.
 
 ---
 
 ## Prérequis
 
-`lftp` doit être installé sur votre système pour que le script fonctionne correctement. Voici comment l'installer (macOS) :
+`lftp` doit être installé sur votre système pour que le script fonctionne correctement. Voici comment l'installer via Homebrew :
 
-### Via Homebrew :
 ```sh
 brew install lftp
 ```
 
 ## Installation
 
-1. **Créer un fichier `.netrc`** dans son répertoire utilisateur `~/` (macOS), à la main ou via :
+1. **Créer un fichier `.netrc`** dans son répertoire utilisateur `~/`, à la main ou via :
    ```sh
    touch ~/.netrc
    chmod 600 ~/.netrc
@@ -25,14 +25,14 @@ brew install lftp
    
    Un fichier d'exemple `netrc.example` est disponible dans ce dépôt.
 
-2. Y ajouter les informations de connexion FTP et enregistrer
+2. Au sein du ficher `.netrc`, ajouter les informations de connexion FTP et enregistrer.
    ```txt
    machine example.your-hosting.com
    login VOTRE_LOGIN
    password VOTRE_MOTDEPASSE
    ```
 
-   > **⚠️ Sécurité** : ne versionnez jamais le fichier `.netrc` contenant vos identifiants réels. Ce fichier doit rester uniquement sur votre machine locale.
+   > **⚠️ Sécurité** : ne jamais versionner le fichier `.netrc` contenant les identifiants réels. Ce fichier doit rester uniquement sur la machine locale.
 
 3. Télécharger le fichier `deploy.sh` et le déposer à la racine du dossier de son projet local
 
@@ -62,16 +62,18 @@ Le script ignore certains fichiers/dossiers par défaut :
 
 ## Sécurité
 
-- Assurez-vous que le fichier `.netrc` a des permissions restreintes (`chmod 600`)
-- Ne partagez jamais vos identifiants FTP
-- Vérifiez que `.netrc` est bien dans votre `.gitignore`
-
-## Note
-
-*Ce script était initialement un outil personnel que je n'avais pas prévu de partager publiquement. Il reste simple et sans fioritures, mais il fonctionne efficacement pour mes besoins. Néanmoins, s'il peut aider des personnes à déployer leurs projets via FTP sur des hébergements mutualisés, j'ai pensé qu'il pourrait être une bonne idée de le mettre à disposition. N'hésitez pas à l'adapter à vos propres besoins.*
+- S'assurer que le fichier `.netrc` a des permissions restreintes (`chmod 600`)
+- Ne jamais partager ses identifiants FTP
+- Vérifier que `.netrc` est bien listé dans le fichier `.gitignore`
 
 ## Licence
 
 Ce projet est distribué sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
+
+---
+
+## Note de l'auteur
+
+*Ce script était initialement un outil personnel que je n'avais pas prévu de partager publiquement. Néanmoins, s'il peut aider des personnes à déployer leurs projets via FTP sur des hébergements mutualisés, j'ai pensé qu'il pourrait être une bonne idée de le mettre à disposition. N'hésitez pas à l'adapter selon vos besoins.*
 
 ---
