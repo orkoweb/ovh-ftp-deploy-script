@@ -9,7 +9,7 @@ Les instructions décrites ci-dessous concernent l'utilisation de ce sricpt sur 
 
 ## Prérequis
 
-`lftp` doit être installé sur votre système pour que le script fonctionne correctement. Voici comment l'installer via Homebrew :
+`lftp` doit être installé pour que le script fonctionne correctement. Voici comment l'installer via Homebrew :
 
 ```sh
 brew install lftp
