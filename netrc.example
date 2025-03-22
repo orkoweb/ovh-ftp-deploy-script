@@ -1,0 +1,10 @@
+# EXEMPLE DE FICHIER .netrc
+# -----------------------------
+# 1. Copiez ce fichier vers ~/.netrc dans votre dossier utilisateur
+# 2. Complétez avec vos informations d'identification réelles
+# 3. Donnez les bonnes permissions avec: chmod 600 ~/.netrc
+# 4. NE COMMITTEZ PAS ce fichier avec vos informations réelles!
+
+machine example.your-hosting.com
+login votre_identifiant
+password votre_mot_de_passe

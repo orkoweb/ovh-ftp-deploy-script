@@ -1,0 +1,12 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de configuration sensibles
+.netrc
+*.local.conf
+config.local.sh
+
+# Logs et fichiers temporaires
+*.log
+*.tmp
