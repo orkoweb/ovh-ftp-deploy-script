@@ -6,7 +6,7 @@ Ce script permet de déployer un projet via FTP sur un serveur OVH mutualisé en
 
 Il compare automatiquement les fichiers locaux et distants pour ne transférer que les éléments modifiés, ajoutés ou supprimés, optimisant ainsi le temps de déploiement.
 
-Les instructions décrites ci-dessous concernent l'utilisation de ce sricpt sur macOS.
+Les instructions décrites ci-dessous concernent l'utilisation de ce script sur macOS.
 
 ---
 
