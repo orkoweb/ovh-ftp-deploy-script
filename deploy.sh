@@ -20,6 +20,9 @@ fi
 
 echo "💾  Déploiement en cours sur OVH..."
 
+# Sanitize les permissions d’images avant upload
+find "$LOCAL_PATH" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.gif" \) -exec chmod 644 {} \;
+
 # Exécute la commande mirror et capture la sortie
 OUTPUT=$(lftp -c "
 open $FTP_HOST
